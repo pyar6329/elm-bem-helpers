@@ -1,11 +1,16 @@
 module BEMHelpers exposing (b__, be_, b_m, bem)
 
+{-| Some helper functions generate BEM class as a string
+@docs b__
+@docs be_
+@docs b_m
+@docs bem
+-}
+
 import String exposing (toLower, join)
 import List exposing (append, singleton)
 
 
-{-| format an item name for BEM
--}
 format : a -> String
 format name =
     name
@@ -20,14 +25,14 @@ format name =
         |> toLower
 
 
-{-| generates a class name of a block as a string
+{-| generates a class name from a block.
 -}
 b__ : a -> String
 b__ block =
     format block
 
 
-{-| generates a class name of a block-element as a string
+{-| generates a class name from block and element.
 -}
 be_ : a -> b -> String
 be_ block element =
@@ -35,7 +40,7 @@ be_ block element =
         |> join "__"
 
 
-{-| generates a class name of a block-modifier as a string
+{-| generates a class name from block and modifier.
 -}
 b_m : a -> b -> String
 b_m block modifier =
@@ -43,7 +48,7 @@ b_m block modifier =
         |> join "--"
 
 
-{-| generates a class name of a block-element-modifier as a string
+{-| generates a class name from block, element, and modifier.
 -}
 bem : a -> b -> c -> String
 bem block element modifier =

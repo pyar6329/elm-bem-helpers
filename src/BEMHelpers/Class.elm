@@ -1,5 +1,12 @@
 module BEMHelpers.Class exposing (b__, be_, b_m, bem)
 
+{-| Some functions for generationg BEM class attributes.
+@docs b__
+@docs be_
+@docs b_m
+@docs bem
+-}
+
 import Html.Attributes as Attr
 import Html exposing (Attribute)
 import BEMHelpers as BEM
