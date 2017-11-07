@@ -2,6 +2,20 @@
 
 Some helpers for using BEM class names that I often use.
 
+## install
+
+I believe using [rtfeldman/elm-css](https://github.com/rtfeldman/elm-css) or [mdgriffith/style-elements](https://github.com/mdgriffith/style-elements) is better.  
+If you'd like this module, use [gdotdesign/elm-github-install](https://github.com/gdotdesign/elm-github-install) to install.  And add below into the "elm-package.json". 
+
+```json
+"dependencies": {
+    "vateira/elm-bem-helpers": "1.0.0 <= v < 2.0.0"
+},
+"dependency-sources": {
+    "vateira/elm-bem-helpers": "https://github.com/vateira/elm-bem-helpers.git"
+}
+```
+
 ## example
 
 ```elm
